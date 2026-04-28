@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+
+<style>
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+:root {
+    --rose: #F9CBD6;
+    --blush: #F2AFBC;
+    --wine: #9E182B;
+    --oat: #F2E0D2;
+    --soft: #fff6f8;
+}
+
+body {
+    background: var(--soft);
+    color: var(--wine);
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: var(--rose);
+    border-bottom: 2px solid var(--blush);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--wine);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* HERO */
+.hero {
+    background: var(--blush);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: white;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: white;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    color: var(--wine);
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CARD GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card-link { text-decoration: none; color: inherit; }
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.card button {
+    margin: 10px 15px 15px;
+    padding: 8px;
+    width: calc(100% - 30px);
+    border: none;
+    background: var(--blush);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* FEATURE SECTION (like screenshot middle part) */
+.feature {
+    background: var(--rose);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.feature p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.feature button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--wine);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+/* BIO */
+.bio-container {
+    display: flex;
+    gap: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+}
+
+.bio-image img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid var(--blush);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--rose);
+    margin-top: 40px;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <h1>Lois's Portfolio</h1>
+    <div>
+        <a href="#lectures">Lectures</a>
+        <a href="#prelims">Prelims</a>
+        <a href="#midterms">Midterms</a>
+        <a href="#finals">Finals</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Portfolio</h1>
+    <p>Explore my works and projects</p>
+</section>
+
+<section id="bio">
+    <h2>About Me</h2>
+    <div class="bio-container">
+        <div class="bio-image">
+            <img src="lowis.jpg" alt="Lois Lane">
+        </div>
+        <div>
+            <h3>Lois Lane Adriano</h3>
+            <p>Hi! Lois Lane, here is my activities from Prelims, Midterms, and Finals. I hope you enjoy viewing my work!</p>
+        </div>
+    </div>
+</section>
+
+<section class="feature">
+    <h2>Inspired. Creative.</h2>
+    <p>This portfolio highlights my journey in learning web development, showcasing my growth through projects and hands-on activities.</p>
+</section>
+
+<section id="lectures">
+    <h2>Lectures</h2>
+    <div class="projects">
+        <a class="card-link" href="Prelim_Activity1 (1).pdf"><div class="card"><img src="chrome.jpg"><h3>Lecture 1</h3><button>View</button></div></a>
+        <a class="card-link" href="Lect2.html"><div class="card"><img src="chrome.jpg"><h3>Lecture 2</h3><button>View</button></div></a>
+        <a class="card-link" href="Lect3.html"><div class="card"><img src="chrome.jpg"><h3>Lecture 3</h3><button>View</button></div></a>
+        <a class="card-link" href="LinksListTables.html"><div class="card"><img src="chrome.jpg"><h3>Lecture 4</h3><button>View</button></div></a>
+        <a class="card-link" href="Lect5.html"><div class="card"><img src="chrome.jpg"><h3>Lecture 5</h3><button>View</button></div></a>
+        <a class="card-link" href="Act1.html"><div class="card"><img src="chrome.jpg"><h3>Lecture 6</h3><button>View</button></div></a>
+        <a class="card-link" href="Lect 7.pdf"><div class="card"><img src="chrome.jpg"><h3>Lecture 7</h3><button>View</button></div></a>
+    </div>
+</section>
+
+<section id="prelims">
+    <h2>Prelims</h2>
+    <div class="projects">
+        <a class="card-link" href="Developers_Page.html"><div class="card"><img src="heart.jpg"><h3>Developer's Page</h3><button>View</button></div></a>
+        <a class="card-link" href="MyFavoritePlace.html"><div class="card"><img src="heart.jpg"><h3>My Favorite Place</h3><button>View</button></div></a>
+        <a class="card-link" href="https://christmassale-753190.netlify.app/"><div class="card"><img src="heart.jpg"><h3>Furniture Sale</h3><button>View</button></div></a>
+
+    </div>
+</section>
+
+<section id="midterms">
+    <h2>Midterms</h2>
+    <div class="projects">
+        <a class="card-link" href="Lists.html"><div class="card"><img src="crown.jpg"><h3>List</h3><button>View</button></div></a>
+        <a class="card-link" href="https://imagemappingmids.netlify.app/midlect6#section12"><div class="card"><img src="crown.jpg"><h3>Image and Image Mapping</h3><button>View</button></div></a>
+        <a class="card-link" href="MenuResto.html"><div class="card"><img src="crown.jpg"><h3>Menu Page</h3><button>View</button></div></a>
+        <a class="card-link" href="https://enneagrammidterms.netlify.app/"><div class="card"><img src="crown.jpg"><h3>Informative Page</h3><button>View</button></div></a>
+    
+    </div>
+</section>
+
+<section id="finals">
+    <h2>Finals</h2>
+    <div class="projects">
+        <a class="card-link" href="FinAct2.html"><div class="card"><img src="angel.jpg"><h3>Admission Form</h3><button>View</button></div></a>
+        <a class="card-link" href="FinAct3.html"><div class="card"><img src="angel.jpg"><h3>Bayan-iki</h3><button>View</button></div></a>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Lois Lane Adriano. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
